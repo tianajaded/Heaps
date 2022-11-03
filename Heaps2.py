@@ -1,10 +1,3 @@
-
-
-class BinaryMaxHeap():
-    def __init__(self):
-        self.heap_list = [0]
-        self.size = 0
-
     def __str__(self):
         return str(self.heap_list[1:])
 
@@ -21,7 +14,7 @@ class BinaryMaxHeap():
             if self.heap_list[index] > self.heap_list[index//2]:
                 self.heap_list[index], self.heap_list[index //
                                                       2] = self.heap_list[index//2], self.heap_list[index]
-            index // 2
+            index = index // 2
 
     def percolate_down(self, index):
         while (index*2) <= self.size:
@@ -84,9 +77,9 @@ def main():
     A.insert(5)
 
     print(A)
-    print(A.max_child())
     print(A.del_max())
-    print(A.max_child())
+    print(A)
+    print(A.max_child(1))
 
 
 main()
