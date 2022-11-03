@@ -1,3 +1,10 @@
+
+
+class BinaryMaxHeap():
+    def __init__(self):
+        self.heap_list = [0]
+        self.size = 0
+
     def __str__(self):
         return str(self.heap_list[1:])
 
