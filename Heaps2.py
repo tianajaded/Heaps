@@ -104,7 +104,7 @@ class BinaryMaxHeap():
 def main():
     A = BinaryMaxHeap()
     list = [5,53,21,36,35,4]
-    build_heap([5,53,21,36,35,4])
+    build_heap(list)
  
     A.insert(5)
     A.insert(9)
